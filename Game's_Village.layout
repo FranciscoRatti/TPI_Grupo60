@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="84" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsVentas.h" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="104" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsVentas.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1937" topLine="83" />
+		</Cursor>
+	</File>
+	<File name="clsPersona.h" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="104" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsPersona.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1007" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="generos.h" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="70" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsJuegos.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="107" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="funciones.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7253" topLine="282" />
+		</Cursor>
+	</File>
+	<File name="clsJuegos.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4501" topLine="210" />
+		</Cursor>
+	</File>
+	<File name="clsFecha.h" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="60" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsEmpleados.h" open="0" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="164" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Empleados.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="9" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="291" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="funciones.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="732" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Juegos.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="297" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cargarCadena.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsEmpleados.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1433" topLine="56" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Clientes.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="208" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="clsFecha.cpp" open="0" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1080" topLine="39" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Juegos.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1040" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Empleados.cpp" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1822" topLine="37" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Clientes.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="198" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Detalle.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1506" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="clsDetalle.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2023" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Ventas.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1651" topLine="37" />
+		</Cursor>
+	</File>
+	<File name="Archivo_Ventas.h" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="158" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cargarCadena.cpp" open="0" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsClientes.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1090" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="clsDetalle.h" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="258" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="clsClientes.h" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="88" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
