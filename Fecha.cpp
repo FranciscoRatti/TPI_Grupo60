@@ -3,6 +3,11 @@
 using namespace std;
 
 // Constructor
+Fecha::Fecha() {
+  _dia = 0;
+  _mes = 0;
+  _anio = 0;
+}
 Fecha::Fecha(int dia, int mes, int anio) {
   setAnio(anio);
   setMes(mes);
