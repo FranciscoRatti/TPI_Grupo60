@@ -1,6 +1,6 @@
 #ifndef CLSVENTAS_H_INCLUDED
 #define CLSVENTAS_H_INCLUDED
-#include "clsFecha.h"
+#include "Fecha.h"
 #include<cstring>
 
 class Ventas{

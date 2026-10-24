@@ -1,7 +1,7 @@
 #include<iostream>
 #include<cstring>
 #include"clsVentas.h"
-#include"clsFecha.h"
+#include"Fecha.h"
 
 #include "Archivo_Clientes.h"
 #include "Archivo_Empleados.h"

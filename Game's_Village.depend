@@ -10,7 +10,7 @@
 
 1779920772 source:c:\users\nicko\desktop\game's village\game's_village\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1779888235 source:c:\users\nicko\desktop\game's village\game's_village\clsjuegos.cpp
 	<iostream>
@@ -33,14 +33,14 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1779977779 source:c:\users\nicko\desktop\game's_village\clsempleados.cpp
 	<iostream>
 
 1779973592 source:c:\users\nicko\desktop\game's_village\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1779920904 c:\users\nicko\desktop\game's_village\clsfecha.h
 
@@ -65,7 +65,7 @@
 	"generos.h"
 
 1779973269 c:\users\nicko\desktop\game's_village\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1779972850 c:\users\nicko\desktop\game's_village\generos.h
@@ -76,11 +76,11 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1779925014 c:\users\nicko\desktop\game's_village\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1779927187 c:\users\nicko\desktop\game's_village\menuprincipal.h
@@ -95,7 +95,7 @@
 	"clsPersona.h"
 
 1779978969 c:\users\nicko\desktop\game's_village\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1778068235 source:c:\users\nicko\desktop\game's_village v3\cargarcadena.cpp
 	<iostream>
@@ -111,7 +111,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v3\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780486029 c:\users\nicko\desktop\game's_village v3\clsfecha.h
@@ -122,10 +122,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1779978969 c:\users\nicko\desktop\game's_village v3\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1779979880 source:c:\users\nicko\desktop\game's_village v3\clsempleados.cpp
 	<iostream>
@@ -138,7 +138,7 @@
 
 1780486029 source:c:\users\nicko\desktop\game's_village v3\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1779973269 source:c:\users\nicko\desktop\game's_village v3\clsjuegos.cpp
 	<iostream>
@@ -148,7 +148,7 @@
 	"generos.h"
 
 1779973269 c:\users\nicko\desktop\game's_village v3\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1779972850 c:\users\nicko\desktop\game's_village v3\generos.h
@@ -157,14 +157,14 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1780487027 source:c:\users\nicko\desktop\game's_village v3\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1779930987 source:c:\users\nicko\desktop\game's_village v3\funciones.cpp
 	<iostream>
@@ -191,7 +191,7 @@
 	<string>
 
 1780487027 c:\users\nicko\desktop\game's_village v3\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1778068235 source:c:\users\nicko\desktop\game's_village v4\cargarcadena.cpp
@@ -208,7 +208,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v4\clsfecha.h
@@ -219,10 +219,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 c:\users\nicko\desktop\game's_village v4\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4\clsempleados.cpp
 	<iostream>
@@ -235,7 +235,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1780496395 source:c:\users\nicko\desktop\game's_village v4\clsjuegos.cpp
 	<iostream>
@@ -245,7 +245,7 @@
 	"generos.h"
 
 1780496206 c:\users\nicko\desktop\game's_village v4\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v4\generos.h
@@ -254,17 +254,17 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 c:\users\nicko\desktop\game's_village v4\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1779930987 source:c:\users\nicko\desktop\game's_village v4\funciones.cpp
@@ -277,7 +277,7 @@
 	<iostream>
 	"funciones.h"
 	"clsJuegos.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780487027 c:\users\nicko\desktop\game's_village v4\archivo_juegos.h
 	"clsJuegos.h"
@@ -304,7 +304,7 @@
 	<string>
 
 1780496206 c:\users\nicko\desktop\game's_village v4.1\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780494383 c:\users\nicko\desktop\game's_village v4.1\clsfecha.h
@@ -325,7 +325,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.1\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1778068235 c:\users\nicko\desktop\game's_village v4.1\cargarcadena.h
@@ -334,10 +334,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780510679 c:\users\nicko\desktop\game's_village v4.1\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4.1\clsempleados.cpp
 	<iostream>
@@ -350,7 +350,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.1\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1780523402 source:c:\users\nicko\desktop\game's_village v4.1\clsjuegos.cpp
 	<iostream>
@@ -363,17 +363,17 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4.1\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 c:\users\nicko\desktop\game's_village v4.1\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1779930987 source:c:\users\nicko\desktop\game's_village v4.1\funciones.cpp
@@ -400,7 +400,7 @@
 	<string>
 
 1780584215 c:\users\nicko\desktop\game's_village v4.2\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780494383 c:\users\nicko\desktop\game's_village v4.2\clsfecha.h
@@ -421,7 +421,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.2\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1778068235 c:\users\nicko\desktop\game's_village v4.2\cargarcadena.h
@@ -430,10 +430,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780578665 c:\users\nicko\desktop\game's_village v4.2\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4.2\clsempleados.cpp
 	<iostream>
@@ -446,7 +446,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.2\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1780584215 source:c:\users\nicko\desktop\game's_village v4.2\clsjuegos.cpp
 	<iostream>
@@ -459,17 +459,17 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4.2\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 c:\users\nicko\desktop\game's_village v4.2\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780574881 source:c:\users\nicko\desktop\game's_village v4.2\main.cpp
@@ -497,7 +497,7 @@
 	<string>
 
 1780584215 c:\users\nicko\desktop\game's_village v4.3\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780494383 c:\users\nicko\desktop\game's_village v4.3\clsfecha.h
@@ -518,7 +518,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.3\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1778068235 c:\users\nicko\desktop\game's_village v4.3\cargarcadena.h
@@ -527,10 +527,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780578665 c:\users\nicko\desktop\game's_village v4.3\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780700705 source:c:\users\nicko\desktop\game's_village v4.3\clsempleados.cpp
 	<iostream>
@@ -544,7 +544,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.3\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1780584215 source:c:\users\nicko\desktop\game's_village v4.3\clsjuegos.cpp
 	<iostream>
@@ -557,17 +557,17 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4.3\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 c:\users\nicko\desktop\game's_village v4.3\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780707090 source:c:\users\nicko\desktop\game's_village v4.3\funciones.cpp
@@ -602,7 +602,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.5\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v4.5\clsfecha.h
@@ -625,7 +625,7 @@
 	<string>
 
 1780584215 c:\users\nicko\desktop\game's_village v4.5\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v4.5\generos.h
@@ -649,10 +649,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780578665 c:\users\nicko\desktop\game's_village v4.5\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780700705 source:c:\users\nicko\desktop\game's_village v4.5\clsempleados.cpp
 	<iostream>
@@ -663,7 +663,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.5\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1780955000 source:c:\users\nicko\desktop\game's_village v4.5\clsjuegos.cpp
 	<iostream>
@@ -676,17 +676,17 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1780497703 source:c:\users\nicko\desktop\game's_village v4.5\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1780497703 c:\users\nicko\desktop\game's_village v4.5\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780955781 source:c:\users\nicko\desktop\game's_village v4.5\funciones.cpp
@@ -728,7 +728,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.6\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v4.6\clsfecha.h
@@ -759,7 +759,7 @@
 	<string>
 
 1781102564 c:\users\nicko\desktop\game's_village v4.6\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v4.6\generos.h
@@ -780,10 +780,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1781129006 c:\users\nicko\desktop\game's_village v4.6\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780700705 source:c:\users\nicko\desktop\game's_village v4.6\clsempleados.cpp
 	<iostream>
@@ -794,7 +794,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.6\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1781102564 source:c:\users\nicko\desktop\game's_village v4.6\clsjuegos.cpp
 	<iostream>
@@ -807,13 +807,13 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1781183783 source:c:\users\nicko\desktop\game's_village v4.6\clsventas.cpp
 
 1781127028 c:\users\nicko\desktop\game's_village v4.6\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1781188880 source:c:\users\nicko\desktop\game's_village v4.6\funciones.cpp
@@ -848,7 +848,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.6 - remake\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v4.6 - remake\clsfecha.h
@@ -879,7 +879,7 @@
 	<string>
 
 1781102564 c:\users\nicko\desktop\game's_village v4.6 - remake\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v4.6 - remake\generos.h
@@ -905,10 +905,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1781129006 c:\users\nicko\desktop\game's_village v4.6 - remake\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780700705 source:c:\users\nicko\desktop\game's_village v4.6 - remake\clsempleados.cpp
 	<iostream>
@@ -919,7 +919,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.6 - remake\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1781102564 source:c:\users\nicko\desktop\game's_village v4.6 - remake\clsjuegos.cpp
 	<iostream>
@@ -932,14 +932,14 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1781210955 source:c:\users\nicko\desktop\game's_village v4.6 - remake\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"Archivo_Clientes.h"
 	"Archivo_Empleados.h"
 	"Archivo_Juegos.h"
@@ -964,7 +964,7 @@
 	"funciones.h"
 
 1781127028 c:\users\nicko\desktop\game's_village v4.6 - remake\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1781199316 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\archivo_clientes.cpp
@@ -981,7 +981,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clsfecha.h
@@ -1012,7 +1012,7 @@
 	<string>
 
 1781102564 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\generos.h
@@ -1023,7 +1023,7 @@
 	"Archivo_Ventas.h"
 
 1781212916 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1781196038 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\archivo_ventas.h
@@ -1047,10 +1047,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1781129006 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780700705 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clsempleados.cpp
 	<iostream>
@@ -1061,7 +1061,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1781102564 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\clsjuegos.cpp
 	<iostream>
@@ -1074,7 +1074,7 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1781213060 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas\funciones.cpp
@@ -1095,7 +1095,7 @@
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"Archivo_Clientes.h"
 	"Archivo_Empleados.h"
 	"Archivo_Juegos.h"
@@ -1114,7 +1114,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsfecha.h
@@ -1145,7 +1145,7 @@
 	<string>
 
 1781102564 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\generos.h
@@ -1156,7 +1156,7 @@
 	"Archivo_Ventas.h"
 
 1781212916 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1781700943 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\archivo_ventas.h
@@ -1180,10 +1180,10 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1781741264 c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1780700705 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsempleados.cpp
 	<iostream>
@@ -1194,7 +1194,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1781102564 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsjuegos.cpp
 	<iostream>
@@ -1207,14 +1207,14 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1781742325 source:c:\users\nicko\desktop\game's_village v4.6 - remake - ventas - juegos\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"Archivo_Clientes.h"
 	"Archivo_Empleados.h"
 	"Archivo_Juegos.h"
@@ -1256,7 +1256,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsfecha.h
@@ -1270,7 +1270,7 @@
 	"clsDetalle.h"
 
 1781741264 c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1781702303 source:c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\archivo_empleados.cpp
 	<iostream>
@@ -1298,7 +1298,7 @@
 	<string>
 
 1781790660 c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\generos.h
@@ -1309,7 +1309,7 @@
 	"Archivo_Ventas.h"
 
 1781212916 c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1781700943 c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\archivo_ventas.h
@@ -1333,7 +1333,7 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1781743319 source:c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsempleados.cpp
 	<iostream>
@@ -1344,7 +1344,7 @@
 
 1780495057 source:c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1781791610 source:c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsjuegos.cpp
 	<iostream>
@@ -1357,14 +1357,14 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1781789950 source:c:\users\nicko\desktop\game's_village v4.6 - remake - casi terminando los archivos\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"Archivo_Clientes.h"
 	"Archivo_Empleados.h"
 	"Archivo_Juegos.h"
@@ -1398,7 +1398,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsfecha.h
@@ -1412,7 +1412,7 @@
 	"clsDetalle.h"
 
 1781741264 c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1781702303 source:c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\archivo_empleados.cpp
 	<iostream>
@@ -1440,7 +1440,7 @@
 	<string>
 
 1782157724 c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\generos.h
@@ -1451,7 +1451,7 @@
 	"Archivo_Ventas.h"
 
 1781212916 c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1781700943 c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\archivo_ventas.h
@@ -1475,7 +1475,7 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1781743319 source:c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsempleados.cpp
 	<iostream>
@@ -1486,7 +1486,7 @@
 
 1780495057 source:c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1782156273 source:c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsjuegos.cpp
 	<iostream>
@@ -1499,14 +1499,14 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1781789950 source:c:\users\roy\documents\utn programacion 2\game's_village v5 - reportes\game's_village v5 - reportes\clsventas.cpp
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"Archivo_Clientes.h"
 	"Archivo_Empleados.h"
 	"Archivo_Juegos.h"
@@ -1540,7 +1540,7 @@
 	"clsPersona.h"
 
 1779925014 c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clspersona.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1780494383 c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clsfecha.h
@@ -1554,7 +1554,7 @@
 	"clsDetalle.h"
 
 1781741264 c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clsdetalle.h
-	"clsFecha.h"
+	"Fecha.h"
 
 1782856378 source:c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\archivo_empleados.cpp
 	<iostream>
@@ -1582,7 +1582,7 @@
 	<string>
 
 1782157724 c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clsjuegos.h
-	"clsFecha.h"
+	"Fecha.h"
 	"generos.h"
 
 1780489343 c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\generos.h
@@ -1593,7 +1593,7 @@
 	"Archivo_Ventas.h"
 
 1781212916 c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clsventas.h
-	"clsFecha.h"
+	"Fecha.h"
 	<cstring>
 
 1781700943 c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\archivo_ventas.h
@@ -1617,7 +1617,7 @@
 	<iostream>
 	<cstring>
 	"clsDetalle.h"
-	"clsFecha.h"
+	"Fecha.h"
 
 1782857087 source:c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clsempleados.cpp
 	<iostream>
@@ -1628,7 +1628,7 @@
 
 1782858156 source:c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clsfecha.cpp
 	<iostream>
-	"clsFecha.h"
+	"Fecha.h"
 
 1782858156 source:c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\clsjuegos.cpp
 	<iostream>
@@ -1641,7 +1641,7 @@
 	<iostream>
 	<cstring>
 	"clsPersona.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"cargarCadena.h"
 
 1781041763 source:c:\users\nicko\desktop\game's_village v5 - reportes 30 de junio reportes roy completados\game's_village v5 - reportes\main.cpp
@@ -1663,7 +1663,7 @@
 	<iostream>
 	<cstring>
 	"clsVentas.h"
-	"clsFecha.h"
+	"Fecha.h"
 	"Archivo_Clientes.h"
 	"Archivo_Empleados.h"
 	"Archivo_Juegos.h"

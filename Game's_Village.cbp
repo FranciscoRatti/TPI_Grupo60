@@ -51,7 +51,7 @@
 		<Unit filename="clsEmpleados.cpp" />
 		<Unit filename="clsEmpleados.h" />
 		<Unit filename="clsFecha.cpp" />
-		<Unit filename="clsFecha.h" />
+		<Unit filename="Fecha.h" />
 		<Unit filename="clsJuegos.cpp" />
 		<Unit filename="clsJuegos.h" />
 		<Unit filename="clsPersona.cpp" />
