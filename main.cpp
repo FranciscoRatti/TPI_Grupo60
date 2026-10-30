@@ -1,11 +1,12 @@
 #include <iostream>
-#include "funciones.h"
+#include "menuPrincipal.h"
 
 using namespace std;
 
 int main()
 {
-    menu_principal();
+    menuPrincipal m;
+    m.run();
 
     return 0;
 }

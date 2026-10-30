@@ -1,7 +1,5 @@
 #include "Cliente.h"
-#include "cargarCadena.h"
 #include <cstring>
-#include <iostream>
 using namespace std;
 
 // Constructores
@@ -17,16 +15,6 @@ Cliente::Cliente(long id, bool estado, char dni[9], char nombre[30],
 }
 
 Cliente::Cliente() {}
-
-void Cliente::cargar(int id) {
-  Persona::cargar();
-  _id = id;
-  cout << "Numero de telefono" << endl;
-  cin >> _telefono;
-  cout << "Email: " << endl;
-  cargarCadena(_email, 30);
-  setEstado(true);
-}
 
 // Setters
 void Cliente::setID(long id) { _id = id; }

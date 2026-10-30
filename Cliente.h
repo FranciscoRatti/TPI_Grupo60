@@ -1,8 +1,7 @@
 #ifndef CLSCliente_H_INCLUDED
 #define CLSCliente_H_INCLUDED
-#include "clsPersona.h"
 
-class Cliente : public Persona {
+class Cliente {
 private:
   long _id;
   bool _estado;
