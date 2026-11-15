@@ -11,14 +11,12 @@ menuInformes::menuInformes()
 void menuInformes::mostrarOpcion()
 {
     cout<< "-------INFORMES-------"<<endl;
-    cout<< "1 - Ultimas ventas"<<endl;
-    cout<< "2 - Ventas en un mes"<<endl;
-    cout<< "3 - Ventas por mes"<<endl;
-    cout<< "4 - Ventas por anio"<<endl;
-    cout<< "5 - Juegos vendidos por genero"<<endl;
-    cout<< "6 - Juegos mas vendidos"<<endl;
-    cout<< "7 - Juegos sin stock"<<endl;
-    cout<< "8 - Ventas por cliente"<<endl;
+    cout<< "1 - Juegos vendidos por genero" <<endl;
+    cout<< "2 - Juegos mas vendidos" <<endl;
+    cout<< "3 - ventas por cliente" <<endl;
+    cout<< "4 - genero mas vendido por cliente" <<endl;
+    cout<< "5 - stock por clasificacion" <<endl;
+    cout<< "6 - porcentaje de ventas por metodo de pago" <<endl;
     cout<< "0 - Volver"<<endl;
 }
 

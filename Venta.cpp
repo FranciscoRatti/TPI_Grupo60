@@ -1,4 +1,4 @@
-#include "Ventas.h"
+#include "Venta.h"
 #include "Fecha.h"
 #include <cstring>
 

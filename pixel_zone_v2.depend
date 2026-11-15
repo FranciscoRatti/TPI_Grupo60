@@ -1,0 +1,137 @@
+# depslib dependency file v1.0
+1793516968 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\archivo_clientes.cpp
+	"Archivo_Clientes.h"
+	<cstring>
+	<iostream>
+
+1793573824 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\archivo_clientes.h
+	"Cliente.h"
+	<cstring>
+	<string>
+
+1794652509 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\cliente.h
+
+1794651977 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\cliente.cpp
+	<iostream>
+	<cstring>
+	"Cliente.h"
+
+1794652611 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\fecha.cpp
+	"Fecha.h"
+	<iostream>
+
+1793618301 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\fecha.h
+
+1794652412 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\juego.cpp
+	"Juego.h"
+	"Funciones.h"
+	<iostream>
+	<cstring>
+
+1794652453 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\juego.h
+	"Enumeradores.h"
+	"Fecha.h"
+
+1794579227 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\enumeradores.h
+
+1793516968 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\main.cpp
+	<iostream>
+	"menuPrincipal.h"
+
+1793516968 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menuprincipal.h
+	"menu.h"
+
+1793516968 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menu.h
+
+1794651977 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\manager_clientes.cpp
+	<iostream>
+	<cstring>
+	"manager_clientes.h"
+
+1793580623 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\manager_clientes.h
+	"Archivo_Clientes.h"
+	"Cliente.h"
+
+1793516968 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menu.cpp
+	<iostream>
+	"menu.h"
+	"rlutil.h"
+
+1793516968 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\rlutil.h
+	<cstdio>
+	<iostream>
+	<string>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<sys/ioctl.h>
+	<sys/time.h>
+	<sys/types.h>
+	<termios.h>
+	<unistd.h>
+
+1794652412 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\archivo_juegos.cpp
+	"Archivo_Juegos.h"
+	"Juego.h"
+	<cstring>
+	<iostream>
+	<string>
+
+1793617438 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\archivo_juegos.h
+	"Juego.h"
+	<cstring>
+	<string>
+
+1793608671 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menuclientes.cpp
+	<iostream>
+	"menuClientes.h"
+	"manager_clientes.h"
+	"rlutil.h"
+
+1793516968 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menuclientes.h
+	"menu.h"
+
+1794651815 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menuinformes.cpp
+	<iostream>
+	"menuInformes.h"
+
+1793516968 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menuinformes.h
+	"menu.h"
+
+1794649457 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menujuegos.cpp
+	<iostream>
+	"menuJuegos.h"
+	"manager_juegos.h"
+	"rlutil.h"
+
+1793516968 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menujuegos.h
+	"menu.h"
+
+1793516968 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\menuprincipal.cpp
+	<iostream>
+	"menuPrincipal.h"
+	"menuInformes.h"
+	"menuJuegos.h"
+	"menuClientes.h"
+
+1794649457 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\manager_juegos.cpp
+	<iostream>
+	<cstring>
+	"manager_juegos.h"
+	"Juego.h"
+	"Archivo_Juegos.h"
+	"Funciones.h"
+
+1794571029 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\manager_juegos.h
+	"Archivo_Juegos.h"
+	"Juego.h"
+
+1794652809 source:c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\funciones.cpp
+	<iostream>
+	<cstdio>
+	"funciones.h"
+
+1794650735 c:\users\agust\accesos\cosas utn\progra 2\pixel_zone_v2\funciones.h
+	"Enumeradores.h"
+

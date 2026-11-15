@@ -1,40 +1,39 @@
-#ifndef GENEROS_H_INCLUDED
-#define GENEROS_H_INCLUDED
+#pragma once
 
-enum class Genero {
-  RPG,
-  ACCION,
-  AVENTURA,
-  SIGILO,
-  DEPORTES,
-  ROGUELITE,
-  SOUL,
-  SANDBOX,
-  PLATAFORMERO,
-  FPS,
-  BRAWLER,
-  FIGHTER,
-  MUNDO_ABIERTO,
-  ESTRATEGIA,
-  GRANJAS,
-  TERROR,
-  PUZZLE,
-  INCREMENTAL,
-  SIMULADOR,
-  RACING
+enum class Genero
+{
+    RPG,
+    ACCION,
+    AVENTURA,
+    SIGILO,
+    DEPORTES,
+    ROGUELITE,
+    SOUL,
+    SANDBOX,
+    PLATAFORMERO,
+    FPS,
+    BRAWLER,
+    FIGHTER,
+    MUNDO_ABIERTO,
+    ESTRATEGIA,
+    GRANJAS,
+    TERROR,
+    PUZZLE,
+    INCREMENTAL,
+    SIMULADOR,
+    RACING
 };
 
-enum class Clasificacion {
-  EVERYONE,
-  EVERYONE_10,
-  TEEN,
-  MATURE,
-  ADULTS_ONLY,
-  RATING_PENDING
+enum class Clasificacion
+{
+    EVERYONE,
+    EVERYONE_10,
+    TEEN,
+    MATURE,
+    ADULTS_ONLY,
+    RATING_PENDING
 };
 
 enum class Plataforma { PC, PLAYSTATION, XBOX, NINTENDO_SWITCH };
 
 enum class FormaPago { EFECTIVO, CREDITO, DEBITO, TRANSFERENCIA };
-
-#endif // GENEROS_H_INCLUDED

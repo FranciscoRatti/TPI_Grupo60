@@ -10,40 +10,31 @@ void menu::run()
 {
     int opcion;
 
-    do{
-    mostrarOpcion();
-    opcion = seleccionarOpcion();
-    ejecutarOpcion(opcion);
-    }while(opcion != 0);
-
-
+    do {
+        mostrarOpcion();
+        opcion = seleccionarOpcion();
+        ejecutarOpcion(opcion);
+    } while(opcion != 0);
 }
 
 int menu::seleccionarOpcion()
 {
     int opcion;
 
-    do
-    {
-        cout<<"opcion: ";
+    do {
+        cout<<"Opcion: ";
         cin>>opcion;
 
         if(opcion<0 || opcion > getCantidadOpciones())
         {
-            cout<< "ingrese una opcion correcta"<<endl;
+            cout<< "Ingrese una opcion correcta"<<endl;
         }
-
     }
     while(opcion<0 || opcion > getCantidadOpciones());
 
-rlutil::cls();
+    rlutil::cls();
 
     return opcion;
-}
-
-void menu::ejecutarOpcion(int opcion)
-{
-
 }
 
 void menu::setCantidadOpciones(int cantidad)

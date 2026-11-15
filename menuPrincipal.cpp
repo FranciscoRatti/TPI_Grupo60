@@ -7,30 +7,27 @@
 
 using namespace std;
 
-
 menuPrincipal::menuPrincipal()
 {
     setCantidadOpciones(4);
 }
 
-
 void menuPrincipal::mostrarOpcion()
 {
-
     cout<< "-------MENU PRINCIPAL-------"<<endl;
-    cout<< "1 - registrar venta"<<endl;
-    cout<< "2 - informes"<<endl;
-    cout<< "3 - juegos"<<endl;
-    cout<< "4 - clientes"<<endl;
-    cout<< "0 - salir"<<endl;
+    cout<< "1 - Registrar venta"<<endl;
+    cout<< "2 - Informes"<<endl;
+    cout<< "3 - Juegos"<<endl;
+    cout<< "4 - Clientes"<<endl;
+    cout<< "0 - Salir"<<endl;
 
 }
+
 void menuPrincipal::ejecutarOpcion(int opcion)
 {
-
-menuInformes informes;
-menuClientes clientes;
-menuJuegos juegos;
+    menuInformes informes;
+    menuJuegos juegos;
+    menuClientes clientes;
 
     switch(opcion)
     {
@@ -47,7 +44,7 @@ menuJuegos juegos;
         clientes.run();
         break;
     case 0:
-        cout<< "saliendo del sistema..."<<endl;
+        cout<< "Saliendo del sistema..."<<endl;
         break;
     }
 

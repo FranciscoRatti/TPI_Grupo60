@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-// Constructor
 Fecha::Fecha() {
   _dia = 0;
   _mes = 0;
@@ -14,7 +13,6 @@ Fecha::Fecha(int dia, int mes, int anio) {
   setDia(dia);
 }
 
-// Setters
 bool Fecha::setDia(int dia) {
   if (dia > 0) {
     int ultimoDia = 0;
@@ -78,10 +76,8 @@ bool Fecha::setMes(int mes) {
 }
 void Fecha::setAnio(int anio) { _anio = anio; }
 
-// Getters
 int Fecha::getDia() { return _dia; }
 int Fecha::getMes() { return _mes; }
 int Fecha::getAnio() { return _anio; }
 
-// Mostrar
 void Fecha::Mostrar() { cout << _dia << "/" << _mes << "/" << _anio; }

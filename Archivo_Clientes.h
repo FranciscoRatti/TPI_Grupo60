@@ -1,5 +1,4 @@
-#ifndef ARCHIVO_CLIENTES_H_INCLUDED
-#define ARCHIVO_CLIENTES_H_INCLUDED
+#pragma once
 #include "Cliente.h"
 #include <cstring>
 #include <string>
@@ -20,4 +19,3 @@ public:
   void listar_registros();
 };
 
-#endif // ARCHIVO_CLIENTES_H_INCLUDED

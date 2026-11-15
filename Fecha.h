@@ -1,5 +1,4 @@
-#ifndef CLSFECHA_H_INCLUDED
-#define CLSFECHA_H_INCLUDED
+#pragma once
 
 class Fecha {
 private:
@@ -23,5 +22,3 @@ public:
   // Mostrar
   void Mostrar();
 };
-
-#endif // CLSFECHA_H_INCLUDED

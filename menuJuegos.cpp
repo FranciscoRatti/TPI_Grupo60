@@ -1,5 +1,7 @@
 #include <iostream>
 #include "menuJuegos.h"
+#include "manager_juegos.h"
+#include "rlutil.h"
 
 using namespace std;
 
@@ -21,19 +23,39 @@ void menuJuegos::mostrarOpcion()
 
 void menuJuegos::ejecutarOpcion(int opcion)
 {
+    Manager_juego j;
+
     switch(opcion)
     {
     case 1:
+        j.consultarPorTitulo();
+        rlutil::anykey();
+        rlutil::cls();
         break;
     case 2:
+        j.consultarPorPrecio();
+        rlutil::anykey();
+        rlutil::cls();
         break;
     case 3:
+        j.modificar();
+        rlutil::anykey();
+        rlutil::cls();
         break;
     case 4:
+        j.agregar();
+        rlutil::anykey();
+        rlutil::cls();
         break;
     case 5:
+        j.eliminar();
+        rlutil::anykey();
+        rlutil::cls();
         break;
     case 0:
+        cout<< "volviendo..." <<endl;
+        rlutil::anykey();
+        rlutil::cls();
         break;
     }
 }

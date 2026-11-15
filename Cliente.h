@@ -1,6 +1,4 @@
-#ifndef CLSCliente_H_INCLUDED
-#define CLSCliente_H_INCLUDED
-
+#pragma once
 class Cliente {
 private:
   long _id;
@@ -12,12 +10,10 @@ private:
   char _email[30];
 
 public:
-  // Constructores
   Cliente();
   Cliente(long id, bool estado, char dni[9], char nombre[30], char apellido[30],
           char telefono[20], char email[30]);
 
-  // Setters
   void setID(long id);
   void setEstado(bool estado);
   void setDNI(char dni[9]);
@@ -26,7 +22,6 @@ public:
   void setTelefono(char telefono[20]);
   void setEmail(char email[30]);
 
-  // Getters
   long getID();
   bool getEstado();
   char *getDNI();
@@ -35,9 +30,5 @@ public:
   char *getTelefono();
   char *getEmail();
 
-  // Mostrar
   void mostrar();
-  void cargar(int id);
 };
-
-#endif // CLSCliente_H_INCLUDED
