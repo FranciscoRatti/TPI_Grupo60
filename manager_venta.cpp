@@ -75,7 +75,7 @@ void Manager_venta::registrarVenta() {
   int nuevoIDVenta = _archivoVentas.contar_registros() + 1;
   int itemsCargados = 0;
   float totalTicket = 0;
-  char continuar;
+  char continuar = 's';
 
   do {
     int idJuego, cantidad;

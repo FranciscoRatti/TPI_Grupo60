@@ -2,6 +2,7 @@
 #include "Archivo_Juegos.h"
 #include "Funciones.h"
 #include "Juego.h"
+#include "rlutil.h"
 #include <cstring>
 #include <iostream>
 
@@ -428,6 +429,8 @@ void Manager_juego::agregar() {
   } else {
     cout << "Error al intentar guardar en disco." << endl;
   }
+  cin.ignore(1000, '\n');
+rlutil::anykey("Presione una tecla para continuar...");
 }
 
 void Manager_juego::eliminar() {

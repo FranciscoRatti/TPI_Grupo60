@@ -115,8 +115,87 @@ void Informe::ventasPorCliente() {
   }
 }
 
-void Informe::generoMasVendidoPorCliente() {}
+void Informe::generoMasVendidoPorCliente() {
+  int cantClientes = _archivoClientes.contar_registros();
+  if (cantClientes == 0) {
+    cout << "No hay clientes registrados." << endl;
+    return;
+  }
 
-void Informe::stockPorClasificacion() {}
+  int *ids = new int[cantClientes];
+  int *copias = new int[cantClientes * 20]();
+  for (int k = 0; k < cantClientes; k++) {
+    ids[k] = _archivoClientes.leer_registro(k).getID();
+  }
+
+  int cantDetalles = _archivoDetalles.contar_registros();
+  for (int i = 0; i < cantDetalles; i++) {
+    DetallesVenta reg = _archivoDetalles.leer_registro(i);
+    if (!reg.getEstado()) continue;
+
+
+    int posVenta = _archivoVentas.buscar_posicion(reg.getIDventa());
+    if (posVenta < 0) continue;
+    Venta venta = _archivoVentas.leer_registro(posVenta);
+    if (!venta.getEstado()) continue;
+
+
+    int posJuego = _archivoJuegos.buscar_posicion(reg.getIDjuego());
+    if (posJuego < 0) continue;
+    Juego juego = _archivoJuegos.leer_registro(posJuego);
+    int g = obtenerPosGenero(juego.getGenero());
+
+
+    for (int k = 0; k < cantClientes; k++) {
+      if (ids[k] == venta.getIDcliente()) {
+        copias[k * 20 + g] += reg.getCantidad();
+        break;
+      }
+    }
+  }
+
+  cout << "GENERO MAS VENDIDO POR CLIENTE" << endl;
+  cout << "------------------------------" << endl;
+  bool hayDatos = false;
+  for (int k = 0; k < cantClientes; k++) {
+    int mejor = 0;
+    for (int g = 1; g < 20; g++) {
+      if (copias[k * 20 + g] > copias[k * 20 + mejor]) mejor = g;
+    }
+    if (copias[k * 20 + mejor] == 0) continue;
+
+    Cliente cliente = _archivoClientes.leer_registro(k);
+    cout << cliente.getNombre() << " " << cliente.getApellido() << ": "
+         << obtenerNombreGenero(obtenerGeneroPos(mejor)) << " ("
+         << copias[k * 20 + mejor] << " copias)" << endl;
+    hayDatos = true;
+  }
+  if (!hayDatos) cout << "No hay ventas registradas." << endl;
+
+  delete[] ids;
+  delete[] copias;
+}
+
+void Informe::stockPorClasificacion() {
+  // Tiene que estar en el MISMO ORDEN que el enum Clasificacion de Enumeradores.h
+  const char *nombres[6] = {"EVERYONE", "EVERYONE 10+", "TEEN", "MATURE",
+                            "ADULTS ONLY", "RATING PENDING"};
+  int stock[6] = {0};
+
+  int cantJuegos = _archivoJuegos.contar_Registros();
+  for (int i = 0; i < cantJuegos; i++) {
+    Juego juego = _archivoJuegos.leer_registro(i);
+    if (!juego.getEstado()) continue;
+
+    int c = static_cast<int>(juego.getClasificacion());
+    if (c >= 0 && c < 6) stock[c] += juego.getStock().getCantidad();
+  }
+
+  cout << "STOCK POR CLASIFICACION" << endl;
+  cout << "-----------------------" << endl;
+  for (int i = 0; i < 6; i++) {
+    cout << nombres[i] << ": " << stock[i] << endl;
+  }
+}
 
 void Informe::ventasPorMetodoDePago() {}
