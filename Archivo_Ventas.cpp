@@ -1,86 +1,84 @@
+#include <cstdio>
+#include <cstring>
 #include "Archivo_Ventas.h"
-#include "clsVentas.h"
-#include <iostream>
 
-using namespace std;
-
-Archivo_Ventas::Archivo_Ventas(const char *n) { strcpy(nombre, n); }
-
-Ventas Archivo_Ventas::leer_registro(int pos) {
-  FILE *p = fopen(nombre, "rb");
-  Ventas obj;
-  if (p == nullptr) {
-    obj.set_id_venta(-2);
-    return obj;
-  }
-  obj.set_id_venta(-1);
-  fseek(p, sizeof obj * pos, 0);
-  fread(&obj, sizeof obj, 1, p);
-  fclose(p);
-  return obj;
+Archivo_Ventas::Archivo_Ventas(const char* nombre)
+{
+    strcpy(_nombre, nombre);
 }
 
-bool Archivo_Ventas::modificar_venta(Ventas obj, int pos) {
-  FILE *p = fopen(nombre, "rb+");
-  if (p == nullptr)
-    return false;
-  fseek(p, sizeof obj * pos, 0);
-  bool escribio = fwrite(&obj, sizeof obj, 1, p);
-  fclose(p);
-  return escribio;
+bool Archivo_Ventas::grabar_registro(Venta reg)
+{
+    FILE* p = fopen(_nombre, "ab");
+    if (p == NULL) return false;
+
+    bool escribio = (fwrite(&reg, sizeof(Venta), 1, p) == 1);
+    fclose(p);
+    return escribio;
 }
 
-bool Archivo_Ventas::grabar_registro(Ventas obj) {
-  FILE *p = fopen(nombre, "ab");
-  if (p == nullptr)
-    return false;
-  bool escribio = fwrite(&obj, sizeof obj, 1, p);
-  fclose(p);
-  return escribio;
+Venta Archivo_Ventas::leer_registro(int pos)
+{
+    Venta reg;
+    if (pos < 0) return reg;
+
+    FILE* p = fopen(_nombre, "rb");
+    if (p == NULL) return reg;
+
+    fseek(p, pos * sizeof(Venta), SEEK_SET);
+    if (fread(&reg, sizeof(Venta), 1, p) != 1)
+    {
+        fclose(p);
+        return Venta();
+    }
+
+    fclose(p);
+    return reg;
 }
 
-int Archivo_Ventas::contar_registros() {
-  FILE *p = fopen(nombre, "rb");
-  if (p == nullptr)
+int Archivo_Ventas::contar_registros()
+{
+    FILE* p = fopen(_nombre, "rb");
+    if (p == NULL) return 0;
+
+    fseek(p, 0, SEEK_END);
+    int bytes = ftell(p);
+    fclose(p);
+
+    if (bytes <= 0) return 0;
+    return bytes / sizeof(Venta);
+}
+
+int Archivo_Ventas::buscar_posicion(int idVenta)
+{
+    Venta reg;
+    FILE* p = fopen(_nombre, "rb");
+    if (p == NULL) return -1;
+
+    int pos = 0;
+    while (fread(&reg, sizeof(Venta), 1, p) == 1)
+    {
+        if (reg.getIDventa() == idVenta)
+        {
+            fclose(p);
+            return pos;
+        }
+        pos++;
+    }
+
+    fclose(p);
     return -1;
-  fseek(p, 0, 2);
-  int cant = ftell(p) / sizeof(Ventas);
-  fclose(p);
-  return cant;
 }
 
-int Archivo_Ventas::buscar_registro(int leg) {
-  int cant_reg = contar_registros();
-  for (int i = 0; i < cant_reg; i++) {
-    Ventas obj = leer_registro(i);
-    if (obj.get_id_venta() == leg) {
-      return i;
-    }
-  }
-  return -1;
-}
+bool Archivo_Ventas::modificar_registro(Venta reg, int pos)
+{
+    if (pos < 0) return false;
 
-void Archivo_Ventas::listar_registros() {
-  int cant_reg = contar_registros();
-  for (int i = 0; i < cant_reg; i++) {
-    Ventas obj = leer_registro(i);
-    if (obj.get_estado()) {
-      obj.mostrar();
-      cout << endl;
-    }
-  }
-}
+    FILE* p = fopen(_nombre, "rb+");
+    if (p == NULL) return false;
 
-bool Archivo_Ventas::buscar_id_registro(int id) {
-  Ventas obj;
-  FILE *p = fopen(nombre, "rb");
-  if (p == NULL)
-    return false;
-  while (fread(&obj, sizeof obj, 1, p) == 1) {
-    if (obj.get_id_venta() == id) {
-      return true;
-    }
-  }
-  fclose(p);
-  return false;
+    fseek(p, pos * sizeof(Venta), SEEK_SET);
+    bool escribio = (fwrite(&reg, sizeof(Venta), 1, p) == 1);
+    fclose(p);
+    return escribio;
 }

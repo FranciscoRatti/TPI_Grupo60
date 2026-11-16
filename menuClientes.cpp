@@ -12,44 +12,53 @@ menuClientes::menuClientes()
 
 void menuClientes::mostrarOpcion()
 {
-    cout<< "-------MENU CLIENTES-------"<<endl;
-    cout<< "1 - Consultar por DNI"<<endl;
-    cout<< "2 - Consultar por nombre"<<endl;
-    cout<< "3 - Listar todos los clientes activos"<<endl;
-    cout<< "4 - Modificar"<<endl;
-    cout<< "5 - Agregar"<<endl;
-    cout<< "6 - Eliminar"<<endl;
-    cout<< "0 - Volver"<<endl;
+    rlutil::cls();
+    cout << "-------MENU CLIENTES-------" << endl;
+    cout << "1 - Consultar por DNI" << endl;
+    cout << "2 - Consultar por nombre" << endl;
+    cout << "3 - Listar los activos"<<endl;
+    cout << "4 - Modificar" << endl;
+    cout << "5 - Agregar" << endl;
+    cout << "6 - Eliminar" << endl;
+    cout << "0 - Volver" << endl;
 }
 
 void menuClientes::ejecutarOpcion(int opcion)
 {
-    Manager_cliente cliente;
+    Manager_cliente c;
 
-    switch(opcion)
+    switch (opcion)
     {
     case 1:
-        cliente.consultarPorDNI();
+        cin.ignore(10000, '\n');
+        c.consultarPorDNI();
+        rlutil::anykey();
         break;
     case 2:
-        cliente.consultarPorNombre();
+        cin.ignore(10000, '\n');
+        c.consultarPorNombre();
+        rlutil::anykey();
         break;
     case 3:
-        cliente.listarTodos();
+        cin.ignore(10000, '\n');
+        c.listarTodos();
+        rlutil::anykey();
         break;
     case 4:
-        cliente.modificar();
+        c.modificar();
+        rlutil::anykey();
         break;
     case 5:
-        cliente.agregar();
+        c.agregar();
+        rlutil::anykey();
         break;
     case 6:
-        cliente.eliminar();
+        c.eliminar();
+        rlutil::anykey();
         break;
     case 0:
-        cout<< "Volviendo al menu anterior"<<endl;
+        cout<< "volviendo al menu anterior..." <<endl;
         rlutil::anykey();
-        rlutil::cls();
         break;
     }
 }

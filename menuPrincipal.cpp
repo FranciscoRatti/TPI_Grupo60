@@ -4,16 +4,21 @@
 #include "menuInformes.h"
 #include "menuJuegos.h"
 #include "menuClientes.h"
+#include "manager_venta.h"
+#include "rlutil.h"
 
 using namespace std;
+
 
 menuPrincipal::menuPrincipal()
 {
     setCantidadOpciones(4);
 }
 
+
 void menuPrincipal::mostrarOpcion()
 {
+    rlutil::cls();
     cout<< "-------MENU PRINCIPAL-------"<<endl;
     cout<< "1 - Registrar venta"<<endl;
     cout<< "2 - Informes"<<endl;
@@ -22,17 +27,18 @@ void menuPrincipal::mostrarOpcion()
     cout<< "0 - Salir"<<endl;
 
 }
-
 void menuPrincipal::ejecutarOpcion(int opcion)
 {
+
     menuInformes informes;
-    menuJuegos juegos;
     menuClientes clientes;
+    menuJuegos juegos;
+    Manager_venta managerVentas;
 
     switch(opcion)
     {
     case 1:
-
+        managerVentas.registrarVenta();
         break;
     case 2:
         informes.run();

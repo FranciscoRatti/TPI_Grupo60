@@ -1,36 +1,46 @@
 #include <iostream>
 #include "menu.h"
-
 #include "rlutil.h"
 
 using namespace std;
-
 
 void menu::run()
 {
     int opcion;
 
-    do {
+    do
+    {
         mostrarOpcion();
         opcion = seleccionarOpcion();
         ejecutarOpcion(opcion);
-    } while(opcion != 0);
+    } while (opcion != 0);
 }
 
 int menu::seleccionarOpcion()
 {
     int opcion;
+    bool valido = false;
 
-    do {
-        cout<<"Opcion: ";
-        cin>>opcion;
+    do
+    {
+        cout << "opcion: ";
+        cin >> opcion;
 
-        if(opcion<0 || opcion > getCantidadOpciones())
+        if (cin.fail())
         {
-            cout<< "Ingrese una opcion correcta"<<endl;
+            cin.clear();
+            while (cin.get() != '\n');
+            cout << "ingrese una opcion correcta" << endl;
         }
-    }
-    while(opcion<0 || opcion > getCantidadOpciones());
+        else if (opcion < 0 || opcion > getCantidadOpciones())
+        {
+            cout << "ingrese una opcion correcta" << endl;
+        }
+        else
+        {
+            valido = true;
+        }
+    } while (!valido);
 
     rlutil::cls();
 
@@ -41,6 +51,7 @@ void menu::setCantidadOpciones(int cantidad)
 {
     _cantidadOpciones = cantidad;
 }
+
 int menu::getCantidadOpciones()
 {
     return _cantidadOpciones;

@@ -1,26 +1,16 @@
-#ifndef ARCHIVO_VENTAS_H_INCLUDED
-#define ARCHIVO_VENTAS_H_INCLUDED
-#include "clsVentas.h"
-#include <cstring>
-#include <string>
-
-using namespace std;
+#pragma once
+#include "Venta.h"
 
 class Archivo_Ventas {
 private:
-  char nombre[50];
+  char _nombre[30];
 
 public:
-  Archivo_Ventas(const char *n = "Archivo_Ventas.dat");
+  Archivo_Ventas(const char *nombre = "Archivo_Ventas.dat");
 
-  Ventas leer_registro(int);
-  bool grabar_registro(Ventas);
-  bool modificar_venta(Ventas, int);
+  bool grabar_registro(Venta reg);
+  Venta leer_registro(int pos);
   int contar_registros();
-  int buscar_registro(int leg);
-  void listar_registros();
-
-  bool buscar_id_registro(int id);
+  int buscar_posicion(int idVenta);
+  bool modificar_registro(Venta reg, int pos);
 };
-
-#endif // ARCHIVO_VENTAS_H_INCLUDED

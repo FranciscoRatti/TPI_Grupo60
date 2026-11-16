@@ -1,6 +1,6 @@
 #pragma once
 #include "Enumeradores.h"
-#include "Fecha.h"
+#include "Stock.h"
 
 class Juego
 {
@@ -10,7 +10,7 @@ private:
     char _titulo[30];
     Genero _genero;
     float _precioUnitario;
-    int _stock;
+    Stock _stock;
     char _desarrollador[30];
     Clasificacion _clasificacion;
     Plataforma _plataforma;
@@ -21,12 +21,15 @@ public:
       float precioUnitario, int stock, char *desarrollador,
       Clasificacion clasificacion, Plataforma plataforma);
 
+
+
     void setId(int id);
     void setEstado(bool estado);
     void setTitulo(char *titulo);
     void setGenero(Genero genero);
     bool setPrecioUnitario(float precio);
-    bool setStock(int stock);
+    bool setStock(Stock stock);
+    bool setStock(int cantidad);
     void setDesarrollador(const char *desarrollador);
     void setClasificacion(Clasificacion clasificacion);
     void setPlataforma(Plataforma plataforma);
@@ -36,7 +39,7 @@ public:
     char *getTitulo();
     Genero getGenero();
     float getPrecioUnitario();
-    int getStock();
+    Stock getStock();
     char *getDesarrollador();
     Clasificacion getClasificacion();
     Plataforma getPlataforma();

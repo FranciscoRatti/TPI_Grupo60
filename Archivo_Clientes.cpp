@@ -7,25 +7,37 @@ using namespace std;
 Archivo_Clientes::Archivo_Clientes(const char *n) { strcpy(nombre, n); }
 
 Cliente Archivo_Clientes::leer_registro(int pos) {
-  FILE *p = fopen(nombre, "rb");
   Cliente obj;
+  if (pos < 0) {
+    obj.setID(-1);
+    return obj;
+  }
+
+  FILE *p = fopen(nombre, "rb");
   if (p == nullptr) {
     obj.setID(-2);
     return obj;
   }
-  obj.setID(-1);
-  fseek(p, sizeof obj * pos, 0);
-  fread(&obj, sizeof obj, 1, p);
+
+  fseek(p, sizeof(Cliente) * pos, SEEK_SET);
+  if (fread(&obj, sizeof(Cliente), 1, p) != 1) {
+    obj.setID(-1);
+  }
+
   fclose(p);
   return obj;
 }
 
 bool Archivo_Clientes::modificar_cliente(Cliente obj, int pos) {
+  if (pos < 0)
+    return false;
+
   FILE *p = fopen(nombre, "rb+");
   if (p == nullptr)
     return false;
-  fseek(p, sizeof obj * pos, 0);
-  bool escribio = fwrite(&obj, sizeof obj, 1, p);
+
+  fseek(p, sizeof(Cliente) * pos, SEEK_SET);
+  bool escribio = (fwrite(&obj, sizeof(Cliente), 1, p) == 1);
   fclose(p);
   return escribio;
 }
@@ -34,7 +46,8 @@ bool Archivo_Clientes::grabar_registro(Cliente obj) {
   FILE *p = fopen(nombre, "ab");
   if (p == nullptr)
     return false;
-  bool escribio = fwrite(&obj, sizeof obj, 1, p);
+
+  bool escribio = (fwrite(&obj, sizeof(Cliente), 1, p) == 1);
   fclose(p);
   return escribio;
 }
@@ -42,11 +55,15 @@ bool Archivo_Clientes::grabar_registro(Cliente obj) {
 int Archivo_Clientes::contar_registros() {
   FILE *p = fopen(nombre, "rb");
   if (p == nullptr)
-    return -1;
-  fseek(p, 0, 2);
-  int cant = ftell(p) / sizeof(Cliente);
+    return 0;
+
+  fseek(p, 0, SEEK_END);
+  int bytes = ftell(p);
   fclose(p);
-  return cant;
+
+  if (bytes <= 0)
+    return 0;
+  return bytes / sizeof(Cliente);
 }
 
 int Archivo_Clientes::buscar_registro(int id) {

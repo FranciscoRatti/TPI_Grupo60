@@ -1,38 +1,30 @@
-#ifndef CLSVENTAS_H_INCLUDED
-#define CLSVENTAS_H_INCLUDED
-#include "Enumeradores.h"
+#pragma once
 #include "Fecha.h"
-#include <cstring>
+#include "Enumeradores.h"
 
 class Venta {
 private:
-  long _id;
-  bool _estado;
-  long _idCliente;
-  Fecha _fechaDeVenta;
-  FormaPago _formaDePago;
-  float _total;
+    int _IDventa;
+    bool _estado;
+    int _IDcliente;
+    Fecha _fechaDeVenta;
+    FormaPago _formaDePago;
 
 public:
-  // Constructores
-  Venta(long id, bool estado, long cliente, Fecha fechaDeVenta,
-        FormaPago formaPago, float total);
+    Venta();
+    Venta(int idVenta, int idCliente, Fecha fechaDeVenta, FormaPago formaDePago);
 
-  // Setters
-  void setId(long id);
-  void setEstado(bool estado);
-  void setClient(long id);
-  void setFechaDeVenta(Fecha fecha);
-  void setFormaPago(FormaPago formaPago);
-  void setTotal(float total);
+    int getIDventa();
+    bool getEstado();
+    int getIDcliente();
+    Fecha getFechaDeVenta();
+    FormaPago getFormaDePago();
 
-  // Getters
-  long getId();
-  bool getEstado();
-  long getClient();
-  Fecha getFechaDeVenta();
-  FormaPago getFormaPago();
-  float getTotal();
+    void setIDventa(int idVenta);
+    void setEstado(bool estado);
+    void setIDcliente(int idCliente);
+    void setFechaDeVenta(Fecha fechaDeVenta);
+    void setFormaDePago(FormaPago formaDePago);
+
+    void mostrar();
 };
-
-#endif // CLSVENTAS_H_INCLUDED
