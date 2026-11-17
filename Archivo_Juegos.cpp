@@ -1,20 +1,20 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
 #include "Archivo_Juegos.h"
 #include "Juego.h"
-#include <cstring>
-#include <iostream>
-#include <string>
 
 using namespace std;
 
-Archivo_Juegos::Archivo_Juegos(string nombre)
+Archivo_Juegos::Archivo_Juegos(const char *nombre)
 {
-    _nombre = nombre;
+    strcpy(_nombre, nombre);
 }
 
 int Archivo_Juegos::contar_Registros()
 {
-    FILE *p = fopen(_nombre.c_str(), "rb");
-    if (p == nullptr)
+    FILE *p = fopen(_nombre, "rb");
+    if (p == NULL)
     {
         return 0;
     }
@@ -28,8 +28,8 @@ int Archivo_Juegos::contar_Registros()
 
 bool Archivo_Juegos::Agregar_Juegos(Juego obj)
 {
-    FILE *p = fopen(_nombre.c_str(), "ab");
-    if (p == nullptr)
+    FILE *p = fopen(_nombre, "ab");
+    if (p == NULL)
     {
         return false;
     }
@@ -46,9 +46,9 @@ bool Archivo_Juegos::listar()
     FILE *p;
     bool flag = false;
 
-    p = fopen(_nombre.c_str(), "rb");
+    p = fopen(_nombre, "rb");
 
-    if (p == nullptr)
+    if (p == NULL)
     {
         cout << "ERROR DE ARCHIVO" << endl;
         return false;
@@ -75,8 +75,8 @@ bool Archivo_Juegos::listar()
 bool Archivo_Juegos::buscar_id_registro(int id)
 {
     Juego obj;
-    FILE *p = fopen(_nombre.c_str(), "rb");
-    if (p == nullptr)
+    FILE *p = fopen(_nombre, "rb");
+    if (p == NULL)
         return false;
 
     while (fread(&obj, sizeof(Juego), 1, p) == 1)
@@ -108,8 +108,8 @@ bool Archivo_Juegos::modificar_registro(Juego obj, int pos)
 {
     if (pos < 0) return false;
 
-    FILE *p = fopen(_nombre.c_str(), "rb+");
-    if (p == nullptr)
+    FILE *p = fopen(_nombre, "rb+");
+    if (p == NULL)
         return false;
 
     fseek(p, sizeof(Juego) * pos, SEEK_SET);
@@ -122,8 +122,8 @@ bool Archivo_Juegos::eliminar_registro(int pos)
 {
     if (pos < 0) return false;
 
-    FILE *p = fopen(_nombre.c_str(), "rb+");
-    if (p == nullptr)
+    FILE *p = fopen(_nombre, "rb+");
+    if (p == NULL)
         return false;
 
     fseek(p, sizeof(Juego) * pos, SEEK_SET);
@@ -151,8 +151,8 @@ Juego Archivo_Juegos::leer_registro(int pos)
         return obj;
     }
 
-    FILE *p = fopen(_nombre.c_str(), "rb");
-    if (p == nullptr)
+    FILE *p = fopen(_nombre, "rb");
+    if (p == NULL)
     {
         obj.setId(-2);
         return obj;

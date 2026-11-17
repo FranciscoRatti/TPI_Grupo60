@@ -187,3 +187,211 @@
 	"Archivo_Clientes.h"
 	"Archivo_Juegos.h"
 
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_clientes.cpp
+	"Archivo_Clientes.h"
+	<cstring>
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_clientes.h
+	"Cliente.h"
+	<cstring>
+	<string>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\cliente.h
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_detalleventa.cpp
+	<cstdio>
+	<cstring>
+	"Archivo_DetalleVenta.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_detalleventa.h
+	"DetallesVenta.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\detallesventa.h
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_juegos.cpp
+	"Archivo_Juegos.h"
+	"Juego.h"
+	<cstring>
+	<iostream>
+	<string>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_juegos.h
+	"Juego.h"
+	<cstring>
+	<string>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\juego.h
+	"Enumeradores.h"
+	"Stock.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\enumeradores.h
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\stock.h
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_ventas.cpp
+	<cstdio>
+	<cstring>
+	"Archivo_Ventas.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\archivo_ventas.h
+	"Venta.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\venta.h
+	"Fecha.h"
+	"Enumeradores.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\fecha.h
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\cliente.cpp
+	<iostream>
+	<cstring>
+	"Cliente.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\detallesventa.cpp
+	<iostream>
+	"DetallesVenta.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\fecha.cpp
+	"Fecha.h"
+	<iostream>
+	<ctime>
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\funciones.cpp
+	"Funciones.h"
+	"Enumeradores.h"
+	<cstdio>
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\funciones.h
+	"Enumeradores.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\informes.cpp
+	"Archivo_DetalleVenta.h"
+	"Cliente.h"
+	"DetallesVenta.h"
+	"Enumeradores.h"
+	"Funciones.h"
+	"Informe.h"
+	"Juego.h"
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\informe.h
+	"Archivo_Clientes.h"
+	"Archivo_DetalleVenta.h"
+	"Archivo_Juegos.h"
+	"Archivo_Ventas.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\juego.cpp
+	<iostream>
+	<cstring>
+	"Juego.h"
+	"Funciones.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\main.cpp
+	<iostream>
+	"menuPrincipal.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menuprincipal.h
+	"menu.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menu.h
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\manager_clientes.cpp
+	"manager_clientes.h"
+	"Funciones.h"
+	<cstring>
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\manager_clientes.h
+	"Archivo_Clientes.h"
+	"Cliente.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\manager_juegos.cpp
+	"manager_juegos.h"
+	"Archivo_Juegos.h"
+	"Funciones.h"
+	"Juego.h"
+	"rlutil.h"
+	<cstring>
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\manager_juegos.h
+	"Archivo_Juegos.h"
+	"Juego.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\rlutil.h
+	<cstdio>
+	<iostream>
+	<string>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<sys/ioctl.h>
+	<sys/time.h>
+	<sys/types.h>
+	<termios.h>
+	<unistd.h>
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\manager_venta.cpp
+	"manager_venta.h"
+	"rlutil.h"
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\manager_venta.h
+	"Archivo_Ventas.h"
+	"Archivo_DetalleVenta.h"
+	"Archivo_Clientes.h"
+	"Archivo_Juegos.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menu.cpp
+	<iostream>
+	"menu.h"
+	"rlutil.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menuclientes.cpp
+	<iostream>
+	"menuClientes.h"
+	"manager_clientes.h"
+	"rlutil.h"
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menuclientes.h
+	"menu.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menuinformes.cpp
+	"menuInformes.h"
+	"Informe.h"
+	"rlutil.h"
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menuinformes.h
+	"menu.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menujuegos.cpp
+	"menuJuegos.h"
+	"manager_juegos.h"
+	"rlutil.h"
+	<iostream>
+
+1794902131 c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menujuegos.h
+	"menu.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\menuprincipal.cpp
+	<iostream>
+	"menuPrincipal.h"
+	"menuInformes.h"
+	"menuJuegos.h"
+	"menuClientes.h"
+	"manager_venta.h"
+	"rlutil.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\stock.cpp
+	<iostream>
+	"Stock.h"
+
+1794902131 source:c:\users\agust\accesos\cosas utn\progra 2\sfqwe\tpi_grupo60-main(1)\tpi_grupo60-main\venta.cpp
+	<iostream>
+	"Venta.h"
+	"Funciones.h"
+
