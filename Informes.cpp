@@ -1,6 +1,7 @@
 #include "Archivo_DetalleVenta.h"
 #include "Cliente.h"
 #include "DetallesVenta.h"
+#include "Enumeradores.h"
 #include "Funciones.h"
 #include "Informe.h"
 #include "Juego.h"
@@ -15,6 +16,8 @@ void Informe::juegosPorGenero() {
   // Sumar totales
   for (int i = 0; i < _archivoDetalles.contar_registros(); i++) {
     DetallesVenta reg = _archivoDetalles.leer_registro(i);
+    if (!reg.getEstado())
+      continue;
 
     Juego juego = _archivoJuegos.leer_registro(
         _archivoJuegos.buscar_posicion(reg.getIDjuego()));
@@ -25,6 +28,8 @@ void Informe::juegosPorGenero() {
   }
 
   // Mostrar
+  cout << "JUEGOS POR GENERO" << endl;
+  cout << "-----------------" << endl;
   for (int i = 0; i < 20; i++) {
     cout << " - " << obtenerNombreGenero(obtenerGeneroPos(i)) << "  $ "
          << totales[i] << endl;
@@ -45,6 +50,9 @@ void Informe::juegosMasVendidos() {
   // Obtener
   for (int i = 0; i < _archivoDetalles.contar_registros(); i++) {
     DetallesVenta reg = _archivoDetalles.leer_registro(i);
+    if (!reg.getEstado())
+      continue;
+
     if (reg.getIDdetalle() > 0) {
       totales[reg.getIDjuego() - 1] +=
           reg.getPrecioUnitario() * reg.getCantidad();
@@ -72,6 +80,8 @@ void Informe::juegosMasVendidos() {
   }
 
   // Mostrar
+  cout << "JUEGOS MAS VENDIDOS" << endl;
+  cout << "-------------------" << endl;
   for (int i = 0; i < cantJuegos; i++) {
     if (totales[i] > 0) {
       Juego juego =
@@ -81,6 +91,9 @@ void Informe::juegosMasVendidos() {
       }
     }
   }
+
+  delete[] totales;
+  delete[] ids;
 }
 
 void Informe::ventasPorCliente() {
@@ -95,6 +108,9 @@ void Informe::ventasPorCliente() {
   // Obtener
   for (int i = 0; i < cantVentas; i++) {
     DetallesVenta reg = _archivoDetalles.leer_registro(i);
+    if (!reg.getEstado())
+      continue;
+
     Venta venta = _archivoVentas.leer_registro(
         _archivoVentas.buscar_posicion(reg.getIDventa()));
 
@@ -103,6 +119,8 @@ void Informe::ventasPorCliente() {
   }
 
   // Mostrar
+  cout << "VENTAS POR CLIENTE" << endl;
+  cout << "------------------" << endl;
   for (int i = 0; i < cantClientes; i++) {
     if (totales[i] > 0) {
       Cliente cliente = _archivoClientes.leer_registro(
@@ -113,6 +131,8 @@ void Informe::ventasPorCliente() {
       }
     }
   }
+
+  delete[] totales;
 }
 
 void Informe::generoMasVendidoPorCliente() {
@@ -131,20 +151,22 @@ void Informe::generoMasVendidoPorCliente() {
   int cantDetalles = _archivoDetalles.contar_registros();
   for (int i = 0; i < cantDetalles; i++) {
     DetallesVenta reg = _archivoDetalles.leer_registro(i);
-    if (!reg.getEstado()) continue;
-
+    if (!reg.getEstado())
+      continue;
 
     int posVenta = _archivoVentas.buscar_posicion(reg.getIDventa());
-    if (posVenta < 0) continue;
-    Venta venta = _archivoVentas.leer_registro(posVenta);
-    if (!venta.getEstado()) continue;
+    if (posVenta < 0)
+      continue;
 
+    Venta venta = _archivoVentas.leer_registro(posVenta);
+    if (!venta.getEstado())
+      continue;
 
     int posJuego = _archivoJuegos.buscar_posicion(reg.getIDjuego());
-    if (posJuego < 0) continue;
+    if (posJuego < 0)
+      continue;
     Juego juego = _archivoJuegos.leer_registro(posJuego);
     int g = obtenerPosGenero(juego.getGenero());
-
 
     for (int k = 0; k < cantClientes; k++) {
       if (ids[k] == venta.getIDcliente()) {
@@ -160,9 +182,11 @@ void Informe::generoMasVendidoPorCliente() {
   for (int k = 0; k < cantClientes; k++) {
     int mejor = 0;
     for (int g = 1; g < 20; g++) {
-      if (copias[k * 20 + g] > copias[k * 20 + mejor]) mejor = g;
+      if (copias[k * 20 + g] > copias[k * 20 + mejor])
+        mejor = g;
     }
-    if (copias[k * 20 + mejor] == 0) continue;
+    if (copias[k * 20 + mejor] == 0)
+      continue;
 
     Cliente cliente = _archivoClientes.leer_registro(k);
     cout << cliente.getNombre() << " " << cliente.getApellido() << ": "
@@ -170,25 +194,29 @@ void Informe::generoMasVendidoPorCliente() {
          << copias[k * 20 + mejor] << " copias)" << endl;
     hayDatos = true;
   }
-  if (!hayDatos) cout << "No hay ventas registradas." << endl;
+  if (!hayDatos)
+    cout << "No hay ventas registradas." << endl;
 
   delete[] ids;
   delete[] copias;
 }
 
 void Informe::stockPorClasificacion() {
-  // Tiene que estar en el MISMO ORDEN que el enum Clasificacion de Enumeradores.h
-  const char *nombres[6] = {"EVERYONE", "EVERYONE 10+", "TEEN", "MATURE",
-                            "ADULTS ONLY", "RATING PENDING"};
+  // Tiene que estar en el MISMO ORDEN que el enum Clasificacion de
+  // Enumeradores.h
+  const char *nombres[6] = {"EVERYONE", "EVERYONE 10+", "TEEN",
+                            "MATURE",   "ADULTS ONLY",  "RATING PENDING"};
   int stock[6] = {0};
 
   int cantJuegos = _archivoJuegos.contar_Registros();
   for (int i = 0; i < cantJuegos; i++) {
     Juego juego = _archivoJuegos.leer_registro(i);
-    if (!juego.getEstado()) continue;
+    if (!juego.getEstado())
+      continue;
 
     int c = static_cast<int>(juego.getClasificacion());
-    if (c >= 0 && c < 6) stock[c] += juego.getStock().getCantidad();
+    if (c >= 0 && c < 6)
+      stock[c] += juego.getStock().getCantidad();
   }
 
   cout << "STOCK POR CLASIFICACION" << endl;
@@ -198,4 +226,51 @@ void Informe::stockPorClasificacion() {
   }
 }
 
-void Informe::ventasPorMetodoDePago() {}
+void Informe::ventasPorMetodoDePago() {
+  int cantVentas = _archivoVentas.contar_registros();
+  int cantDetalles = _archivoDetalles.contar_registros();
+  int totales[4] = {0, 0, 0, 0};
+
+  for (int i = 0; i < cantVentas; i++) {
+    Venta venta = _archivoVentas.leer_registro(i);
+    if (venta.getIDventa() < 0 || !venta.getEstado())
+      continue;
+
+    int indice = 0;
+    switch (venta.getFormaDePago()) {
+    case FormaPago::CREDITO:
+      indice = 0;
+      break;
+    case FormaPago::DEBITO:
+      indice = 1;
+      break;
+    case FormaPago::EFECTIVO:
+      indice = 2;
+      break;
+    case FormaPago::TRANSFERENCIA:
+      indice = 3;
+      break;
+    }
+
+    for (int j = 0; j < cantDetalles; j++) {
+      DetallesVenta reg = _archivoDetalles.leer_registro(j);
+      if (reg.getIDdetalle() > 0 && reg.getEstado() &&
+          reg.getIDventa() == venta.getIDventa()) {
+        totales[indice] += reg.getCantidad();
+      }
+    }
+  }
+
+  int total = totales[0] + totales[1] + totales[2] + totales[3];
+
+  cout << "PORCENTAJE DE VENTAS POR METODO DE PAGO" << endl;
+  cout << "---------------------------------------" << endl;
+  if (total != 0) {
+    cout << "CREDITO       = %" << (float)totales[0] * 100 / total << endl;
+    cout << "DEBITO        = %" << (float)totales[1] * 100 / total << endl;
+    cout << "EFECTIVO      = %" << (float)totales[2] * 100 / total << endl;
+    cout << "TRANSFERENCIA = %" << (float)totales[3] * 100 / total << endl;
+  } else {
+    cout << "Aun no se han registrado ventas" << endl;
+  }
+}
