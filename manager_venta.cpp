@@ -4,6 +4,36 @@
 
 using namespace std;
 
+void Manager_venta::listarTodos() {
+  cout << "=== LISTADO DE VENTAS ===" << endl;
+
+  int total = _archivoVentas.contar_registros();
+
+  if (total < 0) {
+    cout << "Error al abrir el archivo de ventas." << endl;
+    return;
+  }
+
+  if (total == 0) {
+    cout << "No hay ventas registradas." << endl;
+    return;
+  }
+
+  bool encontrado = false;
+
+  for (int i = 0; i < total; i++) {
+    Venta reg = _archivoVentas.leer_registro(i);
+
+    cout << "-----------------------------------" << endl;
+    reg.mostrar();
+    encontrado = true;
+  }
+
+  if (!encontrado) {
+    cout << "No hay ventas activas para mostrar." << endl;
+  }
+}
+
 void Manager_venta::registrarVenta() {
   int idCliente;
   int posCliente = -1;
@@ -196,6 +226,72 @@ void Manager_venta::registrarVenta() {
 
   cin.ignore(1000, '\n');
   rlutil::anykey();
+}
+
+void Manager_venta::eliminar() {
+  int idBuscado;
+
+  do {
+    cout << "\n=== ELIMINAR VENTA (BAJA LOGICA) ===" << endl;
+    cout << "Ingrese el ID de la venta a dar de baja (0 para cancelar): ";
+    cin >> idBuscado;
+
+    if (cin.fail()) {
+      cin.clear();
+      cin.ignore(1000, '\n');
+      cout << "Error: Debe ingresar un numero valido." << endl;
+    }
+
+    if (idBuscado == 0) {
+      cout << "Operacion cancelada." << endl;
+      return;
+    }
+
+    if (idBuscado < 0) {
+      cout << "Error: El ID debe ser mayor a 0." << endl;
+      continue;
+    }
+
+    int pos = _archivoVentas.buscar_posicion(idBuscado);
+
+    if (pos < 0) {
+      cout << "Error: No se encontro ninguna venta con ese ID." << endl;
+      continue;
+    }
+
+    Venta reg = _archivoVentas.leer_registro(pos);
+
+    if (!reg.getEstado()) {
+      cout << "Error: La venta ya se encuentra dada de baja." << endl;
+      continue;
+    }
+
+    cout << "\nDatos de la venta a dar de baja:" << endl;
+    reg.mostrar();
+
+    char confirmacion;
+    do {
+      cout << "\nEsta seguro que desea dar de baja esta venta? (S/N): ";
+      cin >> confirmacion;
+
+      if (confirmacion != 's' && confirmacion != 'S' && confirmacion != 'n' &&
+          confirmacion != 'N') {
+        cout << "Error: Ingrese 'S' para confirmar o 'N' para cancelar."
+             << endl;
+      }
+    } while (confirmacion != 's' && confirmacion != 'S' &&
+             confirmacion != 'n' && confirmacion != 'N');
+
+    if (confirmacion == 's' || confirmacion == 'S') {
+      if (_archivoVentas.eliminar_registro(pos)) {
+        cout << "Venta dada de baja exitosamente." << endl;
+      } else {
+        cout << "Error al actualizar el estado en disco." << endl;
+      }
+    } else {
+      cout << "Operacion cancelada." << endl;
+    }
+  } while (true);
 }
 
 float Manager_venta::calcularTotalVenta(int idVenta) {

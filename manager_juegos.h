@@ -4,13 +4,13 @@
 
 class Manager_juego {
 private:
-    Archivo_Juegos _archivo;
+  Archivo_Juegos _archivo;
 
 public:
-    void consultarPorTitulo();
-    void consultarPorPrecio();
-    void modificar();
-    void agregar();
-    void eliminar();
-    void listarTodos();
+  void consultarPorTitulo();
+  void consultarPorPrecio();
+  void listarTodos();
+  void modificar();
+  void agregar();
+  void eliminar();
 };

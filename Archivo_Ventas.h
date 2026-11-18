@@ -8,9 +8,10 @@ private:
 public:
   Archivo_Ventas(const char *nombre = "Archivo_Ventas.dat");
 
-  bool grabar_registro(Venta reg);
-  Venta leer_registro(int pos);
   int contar_registros();
+  bool grabar_registro(Venta reg);
   int buscar_posicion(int idVenta);
+  Venta leer_registro(int pos);
   bool modificar_registro(Venta reg, int pos);
+  bool eliminar_registro(int pos);
 };
