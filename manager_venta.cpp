@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Manager_venta::listarTodos() {
+void Manager_venta::listarTodos(bool mostrarActivos) {
   cout << "=== LISTADO DE VENTAS ===" << endl;
 
   int total = _archivoVentas.contar_registros();
@@ -24,9 +24,11 @@ void Manager_venta::listarTodos() {
   for (int i = 0; i < total; i++) {
     Venta reg = _archivoVentas.leer_registro(i);
 
-    cout << "-----------------------------------" << endl;
-    reg.mostrar();
-    encontrado = true;
+    if (reg.getEstado() == mostrarActivos) {
+      cout << "-----------------------------------" << endl;
+      reg.mostrar();
+      encontrado = true;
+    }
   }
 
   if (!encontrado) {

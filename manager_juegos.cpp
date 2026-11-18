@@ -94,7 +94,7 @@ void Manager_juego::consultarPorPrecio() {
   cin.ignore(10000, '\n');
 }
 
-void Manager_juego::listarTodos() {
+void Manager_juego::listarTodos(bool mostrarActivos) {
   cout << "=== LISTADO DE JUEGOS ===" << endl;
 
   int total = _archivo.contar_Registros();
@@ -114,9 +114,11 @@ void Manager_juego::listarTodos() {
   for (int i = 0; i < total; i++) {
     Juego reg = _archivo.leer_registro(i);
 
-    cout << "-----------------------------------" << endl;
-    reg.mostrar();
-    encontrado = true;
+    if (reg.getEstado() == mostrarActivos) {
+      cout << "-----------------------------------" << endl;
+      reg.mostrar();
+      encontrado = true;
+    }
   }
 
   if (!encontrado) {
@@ -430,7 +432,7 @@ void Manager_juego::agregar() {
     cout << "Error al intentar guardar en disco." << endl;
   }
   cin.ignore(1000, '\n');
-rlutil::anykey("Presione una tecla para continuar...");
+  rlutil::anykey("Presione una tecla para continuar...");
 }
 
 void Manager_juego::eliminar() {

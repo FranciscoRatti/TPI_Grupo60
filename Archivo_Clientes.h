@@ -16,6 +16,4 @@ public:
   bool modificar_cliente(Cliente, int);
   int contar_registros();
   int buscar_registro(int leg);
-  void listar_registros();
 };
-

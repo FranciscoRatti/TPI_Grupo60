@@ -4,13 +4,13 @@
 
 class Manager_cliente {
 private:
-    Archivo_Clientes _archivo;
+  Archivo_Clientes _archivo;
 
 public:
-    void agregar();
-    void consultarPorDNI();
-    void consultarPorNombre();
-    void modificar();
-    void eliminar();
-    void listarTodos();
+  void consultarPorDNI();
+  void consultarPorNombre();
+  void listarTodos(bool mostrarActivos);
+  void modificar();
+  void agregar();
+  void eliminar();
 };

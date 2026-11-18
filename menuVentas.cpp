@@ -11,8 +11,9 @@ void menuVentas::mostrarOpcion() {
   rlutil::cls();
   cout << "-------MENU VENTAS-------" << endl;
   cout << "1 - Listas los activos" << endl;
-  cout << "2 - Registrar venta" << endl;
-  cout << "3 - Eliminar" << endl;
+  cout << "2 - Listas los inactivos" << endl;
+  cout << "3 - Registrar venta" << endl;
+  cout << "4 - Eliminar" << endl;
   cout << "0 - Volver" << endl;
 }
 
@@ -22,15 +23,20 @@ void menuVentas::ejecutarOpcion(int opcion) {
   switch (opcion) {
   case 1:
     cin.ignore(10000, '\n');
-    v.listarTodos();
+    v.listarTodos(true);
     rlutil::anykey();
     break;
   case 2:
     cin.ignore(10000, '\n');
-    v.registrarVenta();
+    v.listarTodos(false);
     rlutil::anykey();
     break;
   case 3:
+    cin.ignore(10000, '\n');
+    v.registrarVenta();
+    rlutil::anykey();
+    break;
+  case 4:
     cin.ignore(10000, '\n');
     v.eliminar();
     rlutil::anykey();

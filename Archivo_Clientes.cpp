@@ -1,6 +1,5 @@
 #include "Archivo_Clientes.h"
 #include <cstring>
-#include <iostream>
 
 using namespace std;
 
@@ -75,15 +74,4 @@ int Archivo_Clientes::buscar_registro(int id) {
     }
   }
   return -1;
-}
-
-void Archivo_Clientes::listar_registros() {
-  int cant_reg = contar_registros();
-  for (int i = 0; i < cant_reg; i++) {
-    Cliente obj = leer_registro(i);
-    if (obj.getEstado()) {
-      obj.mostrar();
-      cout << endl;
-    }
-  }
 }

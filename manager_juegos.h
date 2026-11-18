@@ -9,7 +9,7 @@ private:
 public:
   void consultarPorTitulo();
   void consultarPorPrecio();
-  void listarTodos();
+  void listarTodos(bool mostrarActivos);
   void modificar();
   void agregar();
   void eliminar();

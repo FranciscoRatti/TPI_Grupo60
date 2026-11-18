@@ -12,7 +12,7 @@ private:
   Archivo_Juegos _archivoJuegos;
 
 public:
-  void listarTodos();
+  void listarTodos(bool mostrarActivos);
   void registrarVenta();
   void eliminar();
   float calcularTotalVenta(int idVenta);

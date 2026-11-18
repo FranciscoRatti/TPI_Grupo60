@@ -71,14 +71,15 @@ void Manager_cliente::consultarPorNombre() {
   }
 }
 
-void Manager_cliente::listarTodos() {
+void Manager_cliente::listarTodos(bool mostrarActivos) {
   cout << "=== LISTADO DE CLIENTES ===" << endl;
   int total = _archivo.contar_registros();
   bool hayActivos = false;
 
   for (int i = 0; i < total; i++) {
     Cliente reg = _archivo.leer_registro(i);
-    if (reg.getEstado()) {
+    if (reg.getEstado() == mostrarActivos) {
+      reg.mostrar();
       hayActivos = true;
       break;
     }
@@ -88,8 +89,6 @@ void Manager_cliente::listarTodos() {
     cout << "No hay clientes activos registrados en el sistema." << endl;
     return;
   }
-
-  _archivo.listar_registros();
 }
 
 void Manager_cliente::modificar() {
